@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body class="body">
+<div style="display: flex; flex-direction: column; max-width: 1350px;"></div>
+<div class="sidebar" id="sidebar"> 
+    <input type="button" value="x" onclick="closeMenu()" class="cancelmenu"><br>
+    <div class="sbdiv1" onclick="openForm()" ><b>Sign in</b></div>
+    <p style="margin-left: 60px;">or Create an account</p>
+    <details>
+      <summary  class="sbdiv">Categories</summary>
+      <div class="sbdiv2">Gadget</div>
+      <div class="sbdiv2">Fasion</div>
+      <div class="sbdiv2">Cafetaria</div>
+      <div class="sbdiv2">Kitchen utencil</div>
+    </details>
+
+    <details>
+      <summary class="sbdiv">Order</summary>
+      <a href="tel:+2347014380448" style="text-decoration: none;"><div class="sbdiv2">Call for order...</div></a>
+      <a href="https://wa.me/+2347014380448 " style="text-decoration: none;"><div class="sbdiv2">Text for order...</div></a>
+    </details>
+
+    <div class="sbdiv">My cart</div>
+    <div class="sbdiv">About</div>
+    
+</div>
+
+<nav>
+<div class="menu"  ">
+    <img src="" alt="">
+    <form class="form">
+      <img src="menu-svgrepo-com.svg" class="menubt"  onclick="openMenu()"> 
+      <img src="kadco-1.png" class="kadcon">
+      <input type="text" placeholder="Search..." class="search">
+      <input type="submit" value="Search" class="sbotton">
+      <img src="cart-svgrepo-com.svg" class="cart"> 
+    </form>
+</div>
+</nav>
+
+
+<div style="display: grid; place-items:center; ">
+  <div class="logform" id="logform">
+    <form style="margin-top: 50px; ">
+      <img src="user-svgrepo-com (1).svg" class="profile"><br>
+      Email<br>
+      <input type="email" placeholder="Email" class="textt"><br>
+      Password<br>
+      <input type="password" placeholder="Passwoord" class="textt"><br>
+      <input type="button" value="Cancel" onclick="closeForm()" class="botton" style="background-color: red;">
+      <input type="submit" value="Login" class="botton">
+    </form>
+</div> 
+</div>
+
+<div class="slideshow-container"  >
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="pexels-media-356056-1691643358853d.jpeg" style="width: 100%; height: 350px;">
+          <div class="text">Gadget collection</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pexels-media-135620-1691643877824f.jpeg" style="width: 100%; height: 350px;">
+          <div class="text">Fasion Collecttion</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pexels-media-13302778-1682615662055m.jpeg" style="width: 100%; height: 350px;">
+          <div class="text">Foddy</div>
+        </div>
+        
+</div>
+        <br>
+        
+<div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+</div>
+
+
+        
+        
+<div class="itemcon">  
+        <div class="itemdiv">
+          <h3><b>SHOES</b></h3>
+          <img  src="pexels-media-2529148-1691238680771.jpeg" class="item"><br>
+          <b>$$$</b><br>
+          <input type="button" value="Show" class="show" onclick="openAbout()">
+        </div>
+
+        <div class="itemdiv">
+          <h3><b>WATCHS</b></h3>
+          <img  src="pexels-media-2783873-1691239610175.jpeg" class="item"><br>
+          <b>$$$</b><br>
+          <input type="button" value="Show" class="show" onclick="openAbout()">
+        </div>
+
+        <div class="itemdiv">
+          <h3><b>CLOTHES</b></h3>
+          <img  src="pexels-media-4641825-1691238503570.jpeg" class="item"><br>
+          <b>$$$</b><br>
+          <input type="button" value="Show" class="show" onclick="openAbout()">
+        </div>
+
+        <div class="itemdiv">
+          <h3><b>BAGS</b></h3>
+          <img  src="pexels-media-904350-1691238819916.jpeg" class="item"><br>
+          <b>$$$</b><br>
+          <input type="button" value="Show" class="show" onclick="openAbout()">
+        </div>
+
+        <div class="itemdiv">
+          <h3><b>MOBILES</b></h3>
+          <img  src="pexels-media-47261-j.jpeg" class="item"><br>
+          <b>$$$</b><br>
+          <input type="button" value="Show" class="show" onclick="openAbout()">
+        </div>
+
+        <div class="itemdiv">
+          <h3><b>LAPTOPS</b></h3>
+          <img  src="pexels-media-205421-1691239023690.jpeg" class="item"><br>
+          <b>$$$</b><br>
+          <input type="button" value="Show" class="show" onclick="openAbout()">
+        </div>
+</div><br>
+
+<div class="itemdt" id="about">
+        <p>ITEM DETAILS</p>
+        <input type="button" value="hide" class="botton" onclick="closeIt()">
+</div>
+
+<div class="ad" id="about">
+  <p style="color: rgb(221, 221, 2);"><b>ORDER FROM CAFETARIA</b></p>
+</div>
+
+<div class="itemcon">  
+  <div class="itemdiv">
+    <h3><b>rice & chicken</b></h3>
+    <img  src="pexels-media-7426867-1681877861880n.jpeg" class="item"><br>
+    <b>$$$</b><br>
+    <input type="button" value="Show" class="show" onclick="openAboutitem()">
+  </div>
+
+  <div class="itemdiv">
+    <h3><b>Popcorn</b></h3>
+    <img  src="pexels-media-5603924-1682361482819.jpeg" class="item"><br>
+    <b>$$$</b><br>
+    <input type="button" value="Show" class="show" onclick="openAboutitem()">
+  </div>
+
+  <div class="itemdiv">
+    <h3><b>Grills</b></h3>
+    <img  src="pexels-media-3434523-1681877579639.jpeg" class="item"><br>
+    <b>$$$</b><br>
+    <input type="button" value="Show" class="show" onclick="openAboutitem()">
+  </div>
+
+  <div class="itemdiv">
+    <h3><b>Boger</b></h3>
+    <img  src="pexels-media-2983101-1681877617480g.jpeg" class="item"><br>
+    <b>$$$</b><br>
+    <input type="button" value="Show" class="show" onclick="openAboutitem()">
+  </div>
+
+  <div class="itemdiv">
+    <h3><b>Pizza</b></h3>
+    <img  src="pizza.jpeg" class="item"><br>
+    <b>$$$</b><br>
+    <input type="button" value="Show" class="show" onclick="openAboutitem()">
+  </div>
+
+  <div class="itemdiv">
+    <h3><b>Chips</b></h3>
+    <img  src="pexels-media-1211887-1681877628283.jpeg" class="item"><br>
+    <b>$$$</b><br>
+    <input type="button" value="Show" class="show" onclick="openAboutitem()">
+  </div>
+</div><br>
+
+<div class="itemdt" id="aboutitem">
+  <p>ABOUT PAGE</p>
+  <input type="button" value="hide" class="botton" onclick="closeItem()">
+</div><br>
+
+<div class="ad2" id="about">
+  <p>GADGETS</p>
+</div>
+
+<div class="ad3" id="about">
+  <p>FASIONS</p>
+</div>
+   
+<script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}   
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        var model = document.getElementById("logform");
+
+        window.onclick = function(event){
+          if(event.target == model){
+            model.style.display = "none";
+          }
+        }
+ </script>
+        
+    
+</body>
+</html>
